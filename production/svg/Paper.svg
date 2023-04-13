@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195.21 284.77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f0f0f0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #ccc;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
+      .cls-7 {
+        stroke: #ccc;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #eee;
+      }
+
+      .cls-5 {
+        fill: #e3e3e3;
+      }
+
+      .cls-6 {
+        fill: #dfdfdf;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <polygon id="background_color" data-name="background color" class="cls-2" points="193.21 282.77 182.77 242.66 193.21 202.55 182.77 162.44 193.21 122.33 182.77 82.22 193.21 42.11 182.77 2 2 2 12.44 42.11 2 82.22 12.44 122.33 2 162.44 12.44 202.55 2 242.66 12.44 282.77 193.21 282.77"/>
+    
+    <g id="colors">
+      <path class="cls-4" d="M182.4,2l10.44,40.11-10.44,40.11m.37,1.41l-49.32-41.52L182.4,2"/>
+      <polyline class="cls-3" points="182.4 2 133.45 42.11 182.77 83.63 133.45 122.33 182.4 162.44 133.45 202.55 182.4 242.66 133.45 282.77 123.01 242.66 133.45 202.55 123.01 162.44 133.45 122.33 123.01 82.22 133.45 42.11 123.01 2"/>
+      <polyline class="cls-4" points="133.45 122.33 182.4 162.44 133.45 202.55 182.4 242.66 133.45 282.77 123.01 242.66 133.45 202.55 123.01 162.44 133.45 122.33"/>
+      <polyline class="cls-4" points="123.01 2 71.46 42.11 61.02 2"/>
+      <polyline class="cls-5" points="12.07 202.55 61.02 242.66 12.07 282.77"/>
+      <polyline id="outer-border" class="cls-5" points="12.44 202.55 2 242.66 12.44 282.77"/>
+      <path class="cls-5" d="M123.01,82.22l10.44-40.11L123.01,2m0,80.22l-51.55-40.11L123.01,2"/>
+      <path class="cls-6" d="M123.01,162.44l-51.55,40.11,51.55,40.11m0-80.22l10.44,40.11-10.44,40.11"/>
+      <polyline class="cls-1" points="12.07 122.33 61.02 162.44 12.07 202.55"/>
+      <polyline id="outer-border-2" data-name="outer-border" class="cls-1" points="12.44 122.33 2 162.44 12.44 202.55"/>
+      <path class="cls-1" d="M182.77,83.63l-49.32,38.7,48.95,40.11m.37,0l10.44-40.11-10.44-40.11"/>
+      <polyline id="outer-border-3" data-name="outer-border" class="cls-1" points="2 2 12.44 42.11 61.02 2"/>
+      <polyline class="cls-5" points="12.07 42.11 61.02 82.22 12.07 122.33"/>
+      <polyline id="outer-border-4" data-name="outer-border" class="cls-5" points="12.44 42.11 2 82.22 12.44 122.33"/>
+      <polyline class="cls-4" points="71.46 202.55 123.01 242.66 71.46 282.77 61.02 242.66 71.46 202.55"/>
+    </g>
+    <polyline class="cls-3" points="123.01 2 71.46 42.11 123.01 82.22 71.46 122.33 123.01 162.44 71.46 202.55 123.01 242.66 71.46 282.77 61.02 242.66 71.46 202.55 61.02 162.44 71.46 122.33 61.02 82.22 71.46 42.11 61.02 2"/>
+    <polyline class="cls-3" points="61.02 2 12.07 42.11 61.02 82.22 12.07 122.33 61.02 162.44 12.07 202.55 61.02 242.66 12.07 282.77"/>
+    <polyline class="cls-5" points="71.46 202.55 61.02 162.44 71.46 122.33"/>
+    <polyline class="cls-5" points="71.46 122.33 123.01 162.44 71.46 202.55"/>
+    <polyline class="cls-1" points="71.46 122.33 61.02 82.22 71.46 42.11"/>
+    <polyline class="cls-1" points="71.46 42.11 123.01 82.22 71.46 122.33"/>
+    <polygon id="background_color" data-name="background color" class="cls-7" points="193.21 282.77 182.77 242.66 193.21 202.55 182.77 162.44 193.21 122.33 182.77 82.22 193.21 42.11 182.77 2 2 2 12.44 42.11 2 82.22 12.44 122.33 2 162.44 12.44 202.55 2 242.66 12.44 282.77 193.21 282.77"/>
+  </g>
+</svg>
