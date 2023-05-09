@@ -17,26 +17,47 @@
             <span class="title-2">Paper</span>
             <span class="title-3">Scissors</span>
         </h1>
-
+        
         <div class="itemsWrapper">
-            <div class="item rock" data-type="0">
+            <div class="item default rock" data-type="0">
                 <img src="./production/svg/Rock.svg" alt="1">
             </div>
-            <div class="item paper" data-type="1">
+            <div class="item default paper" data-type="1">
                 <img src="./production/svg/Paper.svg" alt="2">
             </div>
-            <div class="item scissors" data-type="2">
+            <div class="item default scissors" data-type="2">
                 <img src="./production/svg/Scissors.svg" alt="3">
+            </div>
+            
+        </div>
+        
+        <div class="shoot">
+            <button class="shootBtn">Shoot!</button>
+            <div class="incrementWrapper">
+                <div class="pointIncrement you">+1</div>
+                <div class="pointIncrement them">+1</div>
+            </div>
+            <div class="scoreWrapper">
+                <div class="you score">undefined</div>
+                <div class="them score">undefined</div>
             </div>
         </div>
 
-        <div class="shoot">
-            <button class="shootBtn">Shoot!</button>
-            <div class="scoreWrapper">
-                <div class="you">1</div>
-                <div class="them">0</div>
+        <div class="winScreen">
+            <div class="youWin">You Win!</div>
+            <div class="score">
+                <span class="you">undefined</span>
+                -
+                <span class="them">undefined</span>
+            </div>
+            <div class="winButtonWrapper">
+                <button class="again">Again</button>
+                <button class="restart">Restart</button>
+                <button class="quit">Quit</button>
             </div>
         </div>
+        
+        <div class="sweepScreen">Thnx</div>
     </div>
 </body>
 </html>
