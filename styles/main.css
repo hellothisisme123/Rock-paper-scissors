@@ -356,6 +356,10 @@ html {
     .item.paper img {
         max-height: 70%;
     }
+
+    .winScreen {
+        width: 60%;
+    }
 }
 
 @media screen and (width <= 650px) {
@@ -378,10 +382,6 @@ html {
 }
 
 @media screen and (width <= 550px) {
-    .winScreen {
-        width: 60%;
-    }
-
     .title {
         padding-top: 3%;
         box-sizing: border-box;
