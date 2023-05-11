@@ -12,50 +12,58 @@
 </head>
 <body>
     <div class="container">
+        <h1 class="title">
+            <span class="title-1">Rock</span>
+            <span class="title-2">Paper</span>
+            <span class="title-3">Scissors</span>
+        </h1>
         
-        <div class="title">
-            <div class="titleLetter">M</div>
-            <div class="titleLetter">a</div>
-            <div class="titleLetter">g</div>
-            <div class="titleLetter">i</div>
-            <div class="titleLetter">c</div>
-            <div class="titleLetter"> </div>
-            <div class="titleLetter">8</div>
-            <div class="titleLetter"> </div>
-            <div class="titleLetter">B</div>
-            <div class="titleLetter">a</div>
-            <div class="titleLetter">l</div>
-            <div class="titleLetter">l</div>
+        <div class="itemsWrapper">
+            <div class="item default rock" data-type="0">
+                <img src="./production/svg/Rock.svg" alt="1">
+            </div>
+            <div class="item default paper" data-type="1">
+                <img src="./production/svg/Paper.svg" alt="2">
+            </div>
+            <div class="item default scissors" data-type="2">
+                <img src="./production/svg/Scissors.svg" alt="3">
+            </div>
+            
         </div>
-
-        <div class="ballWrapper">
-            <div class="ballContainer">
-                <div class="shadow"></div>
-                <div class="ball onStart">
-                    <div class="shakeMe">
-                        <span class="c1">S</span>
-                        <span class="c2">h</span>
-                        <span class="c3">a</span>
-                        <span class="c4">k</span>
-                        <span class="c5">e</span>
-                        <span class="c6"> </span>
-                        <span class="c7">M</span>
-                        <span class="c8">e</span>
-                    </div>
-                    <div class="ballHighlight"></div>
-                    <div class="white">
-                        <h1 class="eight">8</h1>
-                        <div class="tringle"></div>
-                        <div class="tringleText"></div>
-                    </div>
-                </div>
+        
+        <div class="shoot">
+            <button class="shootBtn">Shoot!</button>
+            <div class="incrementWrapper">
+                <div class="pointIncrement you">+1</div>
+                <div class="pointIncrement them">+1</div>
+            </div>
+            <div class="scoreWrapper">
+                <div class="you score">undefined</div>
+                <div class="them score">undefined</div>
             </div>
         </div>
 
-        <div class="inputWrapper">
-            <input type="text" class="questionInput" placeholder="Type your question here">
+        <div class="winScreen">
+            <div class="youWin">You Win!</div>
+            <div class="score">
+                <span class="you">undefined</span>
+                -
+                <span class="them">undefined</span>
+            </div>
+            <div class="winButtonWrapper">
+                <button class="again">
+                    Again
+                </button>
+                <button class="restart">
+                    Restart
+                </button>
+                <button class="quit">
+                    Quit
+                </button>
+            </div>
         </div>
         
+        <div class="sweepScreen">Thnx</div>
     </div>
 </body>
 </html>
