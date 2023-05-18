@@ -379,9 +379,27 @@ html {
     left: 0%;
 }
 
+@media screen and (width <= 1500px) {
+    .item.activate:nth-child(1) {
+        --left: 18%;
+    }
+
+    .item.activate:nth-child(2) {
+        --left: 50%;
+    }
+
+    .item.activate:nth-child(3) {
+        --left: 82%;
+    }
+}
+
 @media screen and (width <= 1300px) {   
     .item.paper img {
         max-height: 80%;
+    }
+
+    .item.paper img {
+        max-height: 60%;
     }
 }
 
@@ -398,6 +416,28 @@ html {
         width: 30%;
         font-size: 1.5rem;
     }    
+
+    .winScreen {
+        width: 70%;
+    }
+}
+
+@media screen and (width <= 850px) {
+    .item.activate:nth-child(1) {
+        --left: 20%;
+    }
+
+    .item.activate:nth-child(2) {
+        --left: 50%;
+    }
+
+    .item.activate:nth-child(3) {
+        --left: 80%;
+    }
+
+    .item.paper img {
+        max-height: 50%;
+    }
 }
 
 
@@ -413,14 +453,6 @@ html {
     .winButtonWrapper button {
         font-size: 1.25rem;
     }   
-
-    .item.paper img {
-        max-height: 70%;
-    }
-
-    .winScreen {
-        width: 60%;
-    }
 }
 
 @media screen and (width <= 650px) {
@@ -440,9 +472,8 @@ html {
         font-size: 1rem;
     }
 
-    
     .item.paper img {
-        max-height: 60%;
+        max-height: 30%;
     }
 }
 
@@ -457,19 +488,5 @@ html {
     .title * {
         font-size: 3rem;
         --animationStart: -400%;
-    }
-}
-
-@media screen and (width <= 1500px) {
-    .item:nth-child(1) {
-        --left: 18%;
-    }
-
-    .item:nth-child(2) {
-        --left: 50%;
-    }
-
-    .item:nth-child(3) {
-        --left: 82%;
     }
 }

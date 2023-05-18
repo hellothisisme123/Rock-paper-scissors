@@ -9,6 +9,45 @@ function startGame() {
     const itemsWrapper = document.querySelector('.itemsWrapper')
     let shootWorks = true
 
+    let windowWidth = document.documentElement.clientWidth
+    console.log(windowWidth)
+    let left
+    let center
+    let right
+    if (windowWidth < 850) {
+        left = '20%'  
+        center = '50%'
+        right = '80%'
+        console.log(left)
+    } else if (windowWidth < 1100) {
+        left = '18%'  
+        center = '50%'
+        right = '82%' 
+    } else {
+        left = '25%'
+        center = '50%'
+        right = '75%'
+    }
+
+
+    window.addEventListener('resize', e => {
+        windowWidth = document.documentElement.clientWidth
+        if (windowWidth < 850) {
+            left = '20%'  
+            center = '50%'
+            right = '80%'
+            console.log(left)
+        } else if (windowWidth < 1100) {
+            left = '18%'  
+            center = '50%'
+            right = '82%' 
+        } else {
+            left = '25%'
+            center = '50%'
+            right = '75%'
+        }
+    })
+
     startScreen.classList.add('slideOut')
 
     setTimeout(() => {
@@ -23,36 +62,6 @@ function startGame() {
     }, 250);
 
 
-
-
-    let windowWidth = document.documentElement.clientWidth
-    console.log(windowWidth)
-    let left
-    let center
-    let right
-    if (windowWidth < 1100) {
-        left = '18%'  
-        center = '50%'
-        right = '82%' 
-    } else {
-        left = '25%'
-        center = '50%'
-        right = '75%'
-    }
-
-    window.addEventListener('resize', e => {
-        windowWidth = document.documentElement.clientWidth
-        if (windowWidth < 1100) {
-            left = '18%'  
-            center = '50%'
-            right = '82%' 
-        } else {
-            left = '25%'
-            center = '50%'
-            right = '75%'
-        }
-    })
-
     let score = {
         'select': {
             'you': document.querySelector('.you.score'),
@@ -63,7 +72,6 @@ function startGame() {
             'them': 0
         }
     }
-    console.log(score)
     score.select.you.innerHTML = score.values.you
     score.select.them.innerHTML = score.values.them
 
@@ -89,15 +97,10 @@ function startGame() {
             return
         }
         const randSelection = Math.floor(Math.random() * 3)
-        console.log(randSelection);
-
-        // let currentTypes = [...items].filter(x => x != chosen && x != items[randSelection])
-        // console.log(currentTypes)
 
         let chosenItem = items.filter(x => {
             if (x.dataset.type == chosen) return x
         })[0]
-        console.log(chosenItem)
 
         let unchosenItems = items.filter(x => {
             if (x.dataset.type != chosen) return x
@@ -106,12 +109,10 @@ function startGame() {
         unchosenItems.forEach(item => {
             item.style.top = '-100%'
         })
-        console.log(unchosenItems)
 
         battleItem = document.createElement('div')
         battleItem.classList.add('item')
         itemsWrapper.appendChild(battleItem)
-        console.log(battleItem)
 
         let battleItemImg = document.createElement('img')
         if (randSelection == 0) {
@@ -127,57 +128,53 @@ function startGame() {
         setTimeout(() => {
             battleItem.style.left = right
             myItem.animate({left: left}, {duration: 400, fill: 'forwards', ease: 'cubic-bezier(0.075, 0.82, 0.165, 1)'})
-            console.log(myItem)
-            setTimeout(() => {
 
+            setTimeout(() => {
                 // animates the items towards each other
                 myItem.animate({left: right}, {duration: 750, fill: 'forwards', easing: 'cubic-bezier(.71,-0.46,.5,1)'})
                 
                 battleItem.animate({left: left}, {duration: 750, fill: 'forwards', easing: 'cubic-bezier(.71,-0.46,.5,1)'})
                 setTimeout(() => {
                     if (chosen == 0 && randSelection == 0) {
-                        console.log("tie rock ties")
+                        // console.log("tie rock ties")
                         incrementPoints(0)
                 
                     } else if (chosen == 0 && randSelection == 1) {
-                        console.log("they win paper beats rock")
+                        // console.log("they win paper beats rock")
                         incrementPoints(-1)
                 
                     } else if (chosen == 0 && randSelection == 2) {
-                        console.log("you win rock beats scissors")
+                        // console.log("you win rock beats scissors")
                         incrementPoints(1)
                 
                     } else if (chosen == 1 && randSelection == 0) {
-                        console.log("you win paper beats rock")
+                        // console.log("you win paper beats rock")
                         incrementPoints(1)
                 
                     } else if (chosen == 1 && randSelection == 1) {
-                        console.log("tie paper ties")
+                        // console.log("tie paper ties")
                         incrementPoints(0)
                 
                     } else if (chosen == 1 && randSelection == 2) {
-                        console.log("they win scissors beats paper")
+                        // console.log("they win scissors beats paper")
                         incrementPoints(-1)
                 
                     } else if (chosen == 2 && randSelection == 0) {
-                        console.log("they win rock beats scissors")
+                        // console.log("they win rock beats scissors")
                         incrementPoints(-1)
                 
                     } else if (chosen == 2 && randSelection == 1) {
-                        console.log("you win scissors beats paper")
+                        // console.log("you win scissors beats paper")
                         incrementPoints(1)
                 
                     } else if (chosen == 2 && randSelection == 2) {
-                        console.log("tie scissors ties")
+                        // console.log("tie scissors ties")
                         incrementPoints(0)
                 
                     }
                 }, 0.5 * 750);
             }, 400);
         }, 250);
-        
-        console.log(myItem)
-        console.log(battleItem)
     })
 
     // increments the points and adds a little green +1 thing to the side that gains a point
@@ -260,8 +257,11 @@ function startGame() {
             })
 
             setTimeout(() => {
+                console.log(left)
                 items[0].animate({left: left}, {duration: 400, fill: 'forwards'})
+                console.log(left)
                 items[1].animate({left: center}, {duration: 400, fill: 'forwards'})
+                console.log(left)
                 items[2].animate({left: right}, {duration: 400, fill: 'forwards'})
                 setTimeout(() => {
                     items.forEach(item => {
@@ -281,6 +281,7 @@ function startGame() {
     quitBtn.addEventListener('click', (e) => {
         const sweepScreen = document.querySelector('.sweepScreen')
         // sweepScreen.classList.add('sweep')
+        console.log(left)
         sweepScreen.animate({left: '0%'}, {duration: 450})
         
         setTimeout(() => {
