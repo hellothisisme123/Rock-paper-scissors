@@ -316,9 +316,11 @@ html {
     width: 100%;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 50%;
+    translate: -50%;
     height: 100vh;
     content: '';
+    box-sizing: content-box;
 
     background-color: #122E40;
     border-left: 6px solid #245C80;
