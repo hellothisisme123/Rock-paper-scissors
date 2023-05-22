@@ -319,7 +319,6 @@ html {
     left: 0;
     height: 100vh;
     content: '';
-    box-sizing: border-box;
 
     background-color: #122E40;
     border-left: 6px solid #245C80;
