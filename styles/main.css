@@ -308,6 +308,7 @@ html {
     display: grid;
     bottom: -100%;
     transition: bottom 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-sizing: border-box;
 }
 
 .winScreen::after {
