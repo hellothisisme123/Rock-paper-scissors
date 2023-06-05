@@ -176,7 +176,11 @@ function startGame() {
             }, 400);
         }, 250);
     })
-
+    
+    const againBtn = document.querySelector('.winButtonWrapper > .again')
+    const restartBtn = document.querySelector('.winButtonWrapper > .restart')
+    const quitBtn = document.querySelector('.winButtonWrapper > .quit')
+    
     // increments the points and adds a little green +1 thing to the side that gains a point
     const incrementPoints = (event) => {
         // -1 = lose
@@ -237,11 +241,13 @@ function startGame() {
 
         score.select.you.innerHTML = score.values.you
         score.select.them.innerHTML = score.values.them
+
+        // win after score of 3
+        // if (score.values.them >= 3 || score.values.you >= 3) {
+        //     againBtn.remove()
+        // }
     }
 
-    const againBtn = document.querySelector('.winButtonWrapper > .again')
-    const restartBtn = document.querySelector('.winButtonWrapper > .restart')
-    const quitBtn = document.querySelector('.winButtonWrapper > .quit')
 
     againBtn.addEventListener('click', (e) => {
         battleItem.animate({top: '-100%'}, {duration: 250, fill: 'forwards', ease: 'cubic-bezier(0.075, 0.82, 0.165, 1)'})
